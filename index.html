@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Angelina 💜</title>
+  <meta name="description" content="A tiny birthday surprise for Angelina — lilac theme with balloons, tulips, a photo puzzle, gallery and a special clock."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating layers -->
+  <div id="balloons" class="balloons hidden" aria-hidden="true"></div>
+  <div id="tulips" class="tulips hidden" aria-hidden="true"></div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="glow" aria-hidden="true"></div>
+    <div class="card hero-card">
+      <h1>Something special for you 💌</h1>
+      <p>Tap to start your surprise, birthday girl!</p>
+      <button id="startBtn" class="btn">Click here for a surprise ✨</button>
+      <div class="note-tip">Best viewed with sound on 🔊 (optional)</div>
+    </div>
+  </header>
+
+  <!-- WISH -->
+  <section id="wish" class="center">
+    <div class="container">
+      <h2 class="title">🎂 Happy Birthday <span class="accent">ANGELINA</span> 💜</h2>
+      <p class="subtitle">From friends to forever — you are my favourite story.</p>
+      <div class="toolbar">
+        <button id="replayBalloons" class="btn btn-ghost">Balloons + Tulips 🎈🌷</button>
+        <button id="toPuzzle" class="btn btn-ghost">Play a tiny puzzle 🧩</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUZZLE -->
+  <section id="puzzle" class="center">
+    <div class="container">
+      <h3 class="title small">A little photo puzzle, just for fun 🧩</h3>
+      <p class="subtitle">Unscramble the picture — click tiles to slide. Solve to reveal a message!</p>
+      <div class="puzzle-wrap">
+        <div id="puzzleGrid" class="grid" aria-label="Sliding puzzle" role="application"></div>
+        <div class="toolbar">
+          <button id="shuffleBtn" class="btn">Shuffle / New Photo 🔀</button>
+          <span class="badge">Moves: <b id="moves">0</b></span>
+          <span class="badge">Status: <b id="status">—</b></span>
+        </div>
+        <p id="winMsg" class="subtitle hidden"><span class="success">You did it!</span> You are my ANGEL ❤️ Forever mine.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="center">
+    <div class="container">
+      <h3 class="title small">Some of my favourite <span class="accent">you</span> photos 📸</h3>
+      <div class="grid-photos">
+        <figure class="ph"><img src="images/angelina1.jpg" alt="Angelina 1"></figure>
+        <figure class="ph"><img src="images/angelina2.jpg" alt="Angelina 2"></figure>
+        <figure class="ph"><img src="images/angelina3.jpg" alt="Angelina 3"></figure>
+        <figure class="ph"><img src="images/angelina4.jpg" alt="Angelina 4"></figure>
+        <figure class="ph"><img src="images/angelina5.jpg" alt="Angelina 5"></figure>
+        <figure class="ph"><img src="images/angelina6.jpg" alt="Angelina 6"></figure>
+        <figure class="ph"><img src="images/angelina7.jpg" alt="Angelina 7"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIRTH TIME -->
+  <section id="birth" class="center">
+    <div class="container">
+      <h3 class="title small">Since the moment you arrived 🌟</h3>
+      <p class="subtitle">Born on <b>27 Aug 2008</b> at <b>1:04 PM</b>. Here's how long the world has been brighter ✨</p>
+      <div id="clock" class="clock"></div>
+    </div>
+  </section>
+
+  <!-- NOTES -->
+  <section id="notes" class="center">
+    <div class="container">
+      <h3 class="title small">Sweet & a little funny notes 📝</h3>
+      <ul class="notes">
+        <li>27th August 2008 – iss din ek angel duniya me aayi 👼💜</li>
+        <li>Phir ek din tum meri life me aayi aur sab kuch lilac ho gaya — soft, pretty, peaceful 💜</li>
+        <li>Bhagwan ne bola: beauty ka balance bigad raha hai… isliye Angelina ko thoda zyada cute bhejo 😍</li>
+        <li>Tum aaye to life free Wi‑Fi jaisi ho gayi — har jagah happiness full signal 📶😆</li>
+        <li>Main tumhe tang karta hu kyunki tum hasi mein world record tod sakti ho — please try again 🏆😂</li>
+        <li>Happy Birthday! Aaj cake tumhara, par wish meri: tum hamesha aise hi muskurao 🌷🎂</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    From the day you were born till now — you’re the best gift to this world, and to me. ♾️
+  </footer>
+
+  <audio id="bgm" preload="auto">
+    <!-- Optional: put an mp3 in images/ and add a source line like below -->
+    <!-- <source src="images/your-song.mp3" type="audio/mpeg"> -->
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
